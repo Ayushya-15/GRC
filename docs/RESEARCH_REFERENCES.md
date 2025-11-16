@@ -26,7 +26,125 @@ This document provides comprehensive references to research papers, standards, a
 
 ---
 
-## 2. Machine Learning for Cybersecurity
+## 2. Advanced ISO 31000 Implementation with ML
+
+### Implementing Bayesian Networks for ISO 31000:2018
+- **Authors**: T. Parviainen et al.
+- **Publication**: ScienceDirect
+- **Year**: 2021
+- **URL**: https://www.sciencedirect.com/science/article/pii/S0925231221001673
+- **Description**: Applies Bayesian networks in a risk-management context aligned with ISO 31000:2018
+- **Key Contributions**:
+  - Probabilistic modeling of risk dependencies
+  - Integration of Bayesian inference with ISO 31000 framework
+  - Uncertainty quantification in risk assessment
+  - Risk prediction with probability distributions
+- **Gap Identified**: Traditional tools lack probabilistic risk modeling and uncertainty handling
+- **Our Implementation**: 
+  - Bayesian Network module for complex risk scenarios
+  - Handles risk dependencies and cascading effects
+  - Provides probability distributions for risk outcomes
+  - Integrated with ISO 31000 risk evaluation phase
+- **Relevance**: Provides a strong methodological base for integrating probabilistic modeling with ISO 31000
+
+### Fuzzy Logic and Neural Network-based Risk Assessment
+- **Authors**: N. Luo
+- **Publication**: BonView Press
+- **Year**: 2023
+- **URL**: https://www.bonviewpress.com/article/doi/10.47852/bonviewAIA3202905
+- **Description**: Uses neural networks and fuzzy logic under an ISO 31000 framework for risk assessment
+- **Key Contributions**:
+  - Fuzzy logic for handling imprecise risk information
+  - Neural networks for pattern recognition in risk data
+  - ISO 31000 process integration with ML techniques
+  - Linguistic variable handling (very high, medium, low risk)
+- **Gap Identified**: Binary risk assessment (high/low) without handling uncertainty and imprecision
+- **Our Implementation**:
+  - Fuzzy Logic risk assessment module
+  - Handles linguistic variables and membership functions
+  - Neural network integration for adaptive learning
+  - Supports nuanced risk categorization
+- **Relevance**: ML techniques (neural nets + fuzzy logic) are explicitly used under ISO 31000 process
+
+### Deconstructing Risk Factors for Predicting
+- **Authors**: G. Burstein et al.
+- **Publication**: MDPI - Electronics
+- **Year**: 2023
+- **URL**: https://www.mdpi.com/2079-9292/12/4/871
+- **Description**: Uses feature analysis and ANN for risk level prediction in operational processes
+- **Key Contributions**:
+  - Feature engineering for risk prediction
+  - Artificial Neural Networks (ANN) for risk modeling
+  - Predictive modeling methodologies
+  - Risk factor decomposition techniques
+- **Gap Identified**: Reactive risk assessment without predictive capabilities
+- **Our Implementation**:
+  - Predictive analytics for future threats
+  - Time-to-exploit estimation
+  - Trend analysis and forecasting
+  - Feature-based risk prediction
+- **Relevance**: ML predictive modeling of risk, applicable to network user-systems
+
+### IT Risk Management Based on ISO 31000 and OWASP Framework using OSINT
+- **Authors**: AABA Wiradarma et al.
+- **Publication**: MECS Press - International Journal of Computer Network and Information Security
+- **Year**: 2019
+- **URL**: http://www.mecs-press.org/ijcnis/ijcnis-v11-n12/v11n12-4.html
+- **Description**: Applies ISO 31000 to web/IT risk context plus penetration-testing/OSINT
+- **Key Contributions**:
+  - OSINT integration for threat intelligence
+  - Penetration testing methodology within ISO 31000
+  - Information gathering stage for risk identification
+  - OWASP framework integration
+- **Gap Identified**: Limited external threat intelligence gathering in traditional tools
+- **Our Implementation**:
+  - OSINT capability for threat context
+  - External threat intelligence integration
+  - Comprehensive information gathering stage
+  - OWASP vulnerability mapping
+- **Relevance**: Process of risk identification & evaluation in IT/web context with OSINT
+
+### A Survey of Machine Learning's Integration into Traditional Software Risk Management
+- **Authors**: Various researchers
+- **Publication**: ResearchGate
+- **Year**: 2023
+- **URL**: https://www.researchgate.net/publication/370076849
+- **Description**: Surveys how ML integrates into traditional risk-management frameworks including ISO
+- **Key Contributions**:
+  - Comprehensive ML techniques survey for risk management
+  - Integration patterns and best practices
+  - Evaluation of ML effectiveness in risk contexts
+  - Framework compatibility analysis
+- **Gap Identified**: Fragmented ML integration without systematic approach
+- **Our Implementation**:
+  - Multi-model ML ensemble approach
+  - Systematic integration with ISO 31000
+  - Best practices from survey applied
+  - Continuous model improvement pipeline
+- **Relevance**: Provides conceptual basis for specific end-user-system network context
+
+### The Threat of Adversarial Attacks on Machine Learning in Network Security
+- **Authors**: Ibitoye et al.
+- **Publication**: arXiv
+- **Year**: 2019
+- **URL**: https://arxiv.org/abs/1911.02621
+- **Description**: Focus on ML techniques in network security (intrusion detection) and adversarial risk
+- **Key Contributions**:
+  - Adversarial attacks on ML-based IDS
+  - Defense mechanisms against adversarial inputs
+  - Robustness evaluation methods
+  - Attack taxonomy and countermeasures
+- **Gap Identified**: ML models vulnerable to adversarial manipulation in security contexts
+- **Our Implementation**:
+  - Adversarial-robust model training
+  - Input validation and sanitization
+  - Ensemble models for resilience
+  - Adversarial attack detection
+- **Relevance**: Addresses threats and defenses for ML in network security applications
+
+---
+
+## 3. Machine Learning for Cybersecurity
 
 ### Machine Learning for Network Intrusion Detection
 - **Authors**: Buczak, A. L., & Guven, E.
