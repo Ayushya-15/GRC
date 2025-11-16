@@ -41,14 +41,6 @@ A comprehensive Governance, Risk, and Compliance (GRC) tool for **Identifying an
    - Technical details for security teams
    - Compliance status tracking
    - Trend analysis and predictions
-   - Multiple export formats: PDF, JSON, HTML
-   - Professional PDF reports with charts and tables
-
-6. **Graphical User Interface**
-   - Easy-to-use GUI for non-technical users
-   - Real-time scan progress visualization
-   - Interactive results browser
-   - One-click export to multiple formats
 
 ## Why Our Tool is Better Than Nessus
 
@@ -135,22 +127,7 @@ pip install -e .
 
 ## Quick Start
 
-### GUI Mode (Recommended)
-
-Launch the graphical user interface for easy scanning and report generation:
-
-```bash
-# Launch GUI
-grc-gui
-```
-
-The GUI provides:
-- User-friendly interface for configuring scans
-- Real-time scan progress monitoring
-- Multiple export formats (PDF, JSON, HTML)
-- Visual display of results and statistics
-
-### CLI Mode
+### Basic Scan
 
 ```bash
 # Scan a single host
@@ -163,7 +140,7 @@ grc-scan --target 192.168.1.0/24
 grc-scan --target 192.168.1.100 --quick
 ```
 
-### Advanced CLI Usage
+### Advanced Usage
 
 ```bash
 # Use custom configuration
@@ -181,7 +158,6 @@ grc-scan --target 192.168.1.100 --log-level DEBUG
 ```python
 from grc_tool import GRCScanner
 from grc_tool.utils import Config
-from grc_tool.reporting import PDFExporter, ReportGenerator
 
 # Initialize scanner
 config = Config()
@@ -194,14 +170,6 @@ results = scanner.scan("192.168.1.100")
 vulnerabilities = results["vulnerabilities"]
 risks = results["risk_assessment"]["evaluated_risks"]
 mitigation_plan = results["mitigation_plan"]
-
-# Export to PDF
-report_gen = ReportGenerator()
-report_data = report_gen.generate_comprehensive_report(results)
-
-pdf_exporter = PDFExporter()
-pdf_path = pdf_exporter.export_to_pdf(report_data)
-print(f"PDF report saved to: {pdf_path}")
 ```
 
 ## Configuration

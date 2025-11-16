@@ -124,7 +124,6 @@ dmypy.json
 
 # GRC Tool specific
 reports/
-test_reports/
 logs/
 models/
 *.db
