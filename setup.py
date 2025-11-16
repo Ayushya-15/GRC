@@ -45,6 +45,7 @@ setup(
     entry_points={
         "console_scripts": [
             "grc-scan=grc_tool.main:main",
+            "grc-gui=grc_tool.gui_launcher:main",
         ],
     },
 )
